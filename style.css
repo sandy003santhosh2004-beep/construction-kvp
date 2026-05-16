@@ -172,7 +172,9 @@ nav {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%);
+  background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url('hero-bg.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-bg::before {

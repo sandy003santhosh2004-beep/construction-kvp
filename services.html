@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Kovilpatti Construction Services – Residential, Commercial, Renovation, Infrastructure & Architectural Design services in Tamil Nadu."/>
+  <title>Our Services | Kovilpatti Construction</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .services-hero {
+      min-height: 40vh;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #020617 0%, #0f172a 60%, #1e293b 100%);
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+      position: relative; overflow: hidden;
+    }
+    .services-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(245,158,11,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    }
+    .detail-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 20px;
+      padding: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2rem;
+      align-items: start;
+      transition: all 0.3s;
+    }
+    .detail-card:hover {
+      border-color: rgba(245,158,11,0.3);
+      transform: translateX(5px);
+    }
+    .detail-icon {
+      font-size: 3rem;
+      width: 80px; height: 80px;
+      background: rgba(245,158,11,0.1);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .detail-content h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .detail-content p { color: var(--gray); line-height: 1.8; margin-bottom: 1rem; }
+    .feature-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .feature-tag {
+      background: rgba(245,158,11,0.1);
+      color: var(--primary);
+      padding: 0.2rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.78rem; font-weight: 600;
+    }
+    @media(max-width:600px) {
+      .detail-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🏗️</div>
+    <div class="logo-text">
+      <span>Kovilpatti</span>
+      <span>Construction</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html">🔧 Services</a>
+  <a href="projects.html">🏢 Projects</a>
+  <a href="about.html">ℹ️ About Us</a>
+  <a href="contact.html">📞 Get a Quote</a>
+</div>
+
+<div class="services-hero">
+  <div style="position:relative;">
+    <div class="section-tag">What We Offer</div>
+    <h1 class="section-title">Our <span class="highlight">Services</span></h1>
+    <p class="section-desc">Comprehensive construction solutions tailored to your needs — from foundations to finishing touches.</p>
+  </div>
+</div>
+
+<section style="background: var(--dark); padding: 4rem 2rem;">
+  <div class="container">
+    <div class="detail-card">
+      <div class="detail-icon">🏠</div>
+      <div class="detail-content">
+        <h3>Residential Construction</h3>
+        <p>We build custom homes, apartments, row houses, and luxury villas with attention to every detail. From foundation to interior finish, our residential team delivers quality homes that stand the test of time. We work closely with homeowners to understand their lifestyle, preferences, and budget.</p>
+        <div class="feature-list">
+          <span class="feature-tag">Custom Villas</span>
+          <span class="feature-tag">Apartments</span>
+          <span class="feature-tag">Row Houses</span>
+          <span class="feature-tag">Duplex Homes</span>
+          <span class="feature-tag">Interior Finish</span>
+          <span class="feature-tag">Vastu Compliant</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-card">
+      <div class="detail-icon">🏢</div>
+      <div class="detail-content">
+        <h3>Commercial Buildings</h3>
+        <p>From small retail shops to multi-story commercial complexes, we deliver commercial spaces that are functional, attractive, and built to last. Our commercial division handles office parks, shopping centers, warehouses, and mixed-use developments.</p>
+        <div class="feature-list">
+          <span class="feature-tag">Office Buildings</span>
+          <span class="feature-tag">Shopping Centers</span>
+          <span class="feature-tag">Warehouses</span>
+          <span class="feature-tag">Hotels</span>
+          <span class="feature-tag">Showrooms</span>
+          <span class="feature-tag">Factories</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-card">
+      <div class="detail-icon">🔨</div>
+      <div class="detail-content">
+        <h3>Renovation & Remodeling</h3>
+        <p>Breathe new life into your existing space. Our renovation team specializes in transforming outdated properties into modern, beautiful, and highly functional spaces. We handle everything from kitchen remodels to full structural renovations with minimal disruption.</p>
+        <div class="feature-list">
+          <span class="feature-tag">Home Renovation</span>
+          <span class="feature-tag">Kitchen Remodel</span>
+          <span class="feature-tag">Bathroom Upgrade</span>
+          <span class="feature-tag">Structural Changes</span>
+          <span class="feature-tag">Flooring</span>
+          <span class="feature-tag">Painting</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-card">
+      <div class="detail-icon">🛣️</div>
+      <div class="detail-content">
+        <h3>Infrastructure Projects</h3>
+        <p>We undertake large-scale government and private infrastructure projects including roads, bridges, drainage systems, water treatment plants, and community facilities. Our infrastructure division is certified for government tenders and public works.</p>
+        <div class="feature-list">
+          <span class="feature-tag">Roads</span>
+          <span class="feature-tag">Bridges</span>
+          <span class="feature-tag">Drainage</span>
+          <span class="feature-tag">Water Systems</span>
+          <span class="feature-tag">Public Parks</span>
+          <span class="feature-tag">Govt. Tenders</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-card">
+      <div class="detail-icon">📐</div>
+      <div class="detail-content">
+        <h3>Architectural Design</h3>
+        <p>Our in-house architectural team creates innovative, beautiful, and practical designs that match your vision and comply with all local regulations. We produce complete blueprints, 3D visualizations, and structural drawings for every project.</p>
+        <div class="feature-list">
+          <span class="feature-tag">3D Design</span>
+          <span class="feature-tag">Blueprints</span>
+          <span class="feature-tag">Structural Drawings</span>
+          <span class="feature-tag">Interior Design</span>
+          <span class="feature-tag">Landscape</span>
+          <span class="feature-tag">Permit Filing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-card">
+      <div class="detail-icon">🔍</div>
+      <div class="detail-content">
+        <h3>Project Consultation</h3>
+        <p>Not sure where to start? Our expert consultants will guide you through every decision — from site selection and soil testing to material choices and contractor management. We also offer project management services for owner-builder projects.</p>
+        <div class="feature-list">
+          <span class="feature-tag">Site Analysis</span>
+          <span class="feature-tag">Cost Estimation</span>
+          <span class="feature-tag">Project Management</span>
+          <span class="feature-tag">Soil Testing</span>
+          <span class="feature-tag">Permit Guidance</span>
+          <span class="feature-tag">Quality Audit</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="contact.html" class="btn-primary">📞 Request a Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🏗️</div><div class="logo-text"><span>Kovilpatti</span><span>Construction</span></div></a>
+      <p>Building excellence across Kovilpatti and Tamil Nadu since 2005.</p>
+    </div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Residential</a></li><li><a href="services.html">Commercial</a></li><li><a href="services.html">Renovation</a></li><li><a href="services.html">Infrastructure</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919999999999">📞 +91 99999 99999</a></li><li><a href="#">📍 Kovilpatti, TN</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Kovilpatti Construction. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" class="social-link">📘</a>
+      <a href="#" class="social-link">📸</a>
+      <a href="#" class="social-link">💬</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

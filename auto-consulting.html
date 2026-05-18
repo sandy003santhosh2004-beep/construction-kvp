@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="MM Auto Consulting – Premium car buying, selling, and consulting services in Kovilpatti." />
+  <title>MM Auto Consulting | Find Your Dream Car</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="auto-style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🚗</div>
+      <div class="logo-text" style="font-size: 0.85rem;">
+        <span>MM Construction</span>
+        <span>& Auto Consulting</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="auto-consulting.html" class="active">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Inventory</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="auto-consulting.html">🏠 Home</a>
+    <a href="#">🔧 Services</a>
+    <a href="#">🚗 Inventory</a>
+    <a href="#">ℹ️ About Us</a>
+    <a href="contact.html">📞 Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">⭐ Trusted Auto Experts · Kovilpatti</div>
+        <h1 class="hero-title">
+          Find Your<br />
+          <span class="highlight">Dream Car</span><br />
+          Today
+        </h1>
+        <p class="hero-desc">
+          MM Auto Consulting delivers expert guidance, premium car sales, and unmatched consultation to help you make
+          the best automotive decisions.
+        </p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn-primary">🚗 Book Consultation</a>
+          <a href="#" class="btn-outline">🔍 View Inventory</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="num">1000+</div>
+            <div class="label">Cars Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">15+</div>
+            <div class="label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">100%</div>
+            <div class="label">Client Satisfied</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-section">
+        <div class="hero-img-card">
+          <img src="hero-car.png" alt="Luxury Sports Car" style="width:100%; height:100%; object-fit:cover;" />
+          <div class="hero-img-overlay"></div>
+          <div class="hero-float-badge glass-panel">
+            <p>🏆 Premium Dealer</p>
+            <p>Best Auto Consultants · Kovilpatti</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="text-decoration:none;">
+          <div class="logo-icon">🚗</div>
+          <div class="logo-text" style="font-size: 0.85rem;">
+            <span>MM Construction</span>
+            <span>& Auto Consulting</span>
+          </div>
+        </a>
+        <p>Premium auto consulting and sales across Kovilpatti. Your trusted partner for finding the perfect vehicle.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Car Buying Guide</a></li>
+          <li><a href="#">Car Selling</a></li>
+          <li><a href="#">Valuation</a></li>
+          <li><a href="#">Insurance Consulting</a></li>
+          <li><a href="#">Finance Assistance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Inventory</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919999999999">📞 +91 99999 99999</a></li>
+          <li><a href="mailto:info@mmconstruction.com">✉️ info@mmconstruction.com</a></li>
+          <li><a href="#">📍 Kovilpatti, Tamil Nadu</a></li>
+          <li><a href="#">🕐 Mon–Sat: 9AM–6PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 MM Construction & Auto Consulting. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Facebook">📘</a>
+        <a href="#" class="social-link" title="Instagram">📸</a>
+        <a href="#" class="social-link" title="WhatsApp">💬</a>
+        <a href="#" class="social-link" title="YouTube">📺</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+    });
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.stat-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+
+</html>

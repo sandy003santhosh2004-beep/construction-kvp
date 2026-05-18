@@ -72,19 +72,11 @@ nav {
   flex-direction: column;
 }
 
-.nav-logo .logo-text span:first-child {
+.nav-logo .logo-text span {
   font-size: 1.1rem;
   font-weight: 800;
   color: var(--primary);
-  line-height: 1;
-}
-
-.nav-logo .logo-text span:last-child {
-  font-size: 0.65rem;
-  font-weight: 400;
-  color: var(--gray);
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .nav-links {

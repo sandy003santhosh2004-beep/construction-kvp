@@ -1,0 +1,89 @@
+/* auto-style.css */
+
+/* Override Root Variables for Automotive Theme */
+:root {
+  --primary: #3b82f6; /* Electric Blue */
+  --primary-dark: #2563eb;
+  --secondary: #111827;
+  --dark: #000000; /* Deep black for luxury feel */
+  --darker: #050505;
+  --accent: #10b981; 
+  --gradient: linear-gradient(135deg, #3b82f6, #60a5fa); /* Sleek blue gradient */
+  --shadow: 0 15px 50px rgba(59, 130, 246, 0.15); /* Blue tinted shadow */
+  --radius: 8px; /* Sharper edges for a sporty/aerodynamic feel */
+}
+
+/* Glassmorphism Utilities for Auto Page */
+.glass-panel {
+  background: rgba(20, 20, 25, 0.6) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Navigation for Auto Page */
+nav {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2) !important;
+}
+
+/* Hero Section Updates */
+.hero-bg {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 100%), url('hero-car.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.hero-bg::before {
+  opacity: 0.3; /* dim the grid pattern from style.css */
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, transparent 70%) !important;
+}
+.hero-badge {
+  border-color: rgba(59, 130, 246, 0.4) !important;
+  background: rgba(59, 130, 246, 0.1) !important;
+  border-radius: 4px !important;
+}
+
+/* Buttons */
+.btn-primary {
+  border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem !important;
+}
+.btn-outline {
+  border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem !important;
+}
+
+/* Cards */
+.stat-card {
+  background: rgba(10, 10, 15, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.15) !important;
+  border-radius: 8px !important;
+}
+
+.hero-img-card {
+  border-radius: 12px !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  height: 480px; /* slightly taller for the car image */
+}
+.hero-float-badge {
+  background: rgba(10, 10, 15, 0.9) !important;
+  border-radius: 8px !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+  backdrop-filter: blur(12px);
+}
+
+/* Footer overrides */
+footer {
+  background: var(--darker) !important;
+  border-top: 1px solid rgba(59, 130, 246, 0.1) !important;
+}
